@@ -96,7 +96,7 @@ public class EnemyMovement_Script : MonoBehaviour
     {
         Vector3 playerPos = player.transform.position;
 
-        enemy_rb.velocity = new Vector3(playerPos.x - transform.position.x, playerPos.y - transform.position.y, 0).normalized * speed;
+        enemy_rb.linearVelocity = new Vector3(playerPos.x - transform.position.x, playerPos.y - transform.position.y, 0).normalized * speed;
     }
 
     private void OnTriggerEnter(Collider other)

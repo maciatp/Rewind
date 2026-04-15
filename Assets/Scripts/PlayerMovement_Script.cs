@@ -226,7 +226,7 @@ public class PlayerMovement_Script : MonoBehaviour
         {
 
             //MOVE
-            rb.velocity = new Vector2(moveDirection.x, moveDirection.y).normalized * moveSpeed;
+            rb.linearVelocity = new Vector2(moveDirection.x, moveDirection.y).normalized * moveSpeed;
             //MovePlayer();
 
 
